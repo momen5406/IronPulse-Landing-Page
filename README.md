@@ -7,7 +7,7 @@ This landing page was created as part of a 4-project series, where each website 
 
 ## 🚀 Live Preview
 
-🔗 [Live Demo](https://iron-pulse-landing-page.vercel.app/)
+🔗 [Live Demo](https://ironpulse.vercel.app/)
 
 ---
 
