@@ -20,6 +20,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -288,6 +290,9 @@
   }
   .h-15 {
     height: calc(var(--spacing) * 15);
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[600px\] {
     height: 600px;
@@ -572,6 +577,10 @@
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -694,6 +703,11 @@
       outline-style: none;
     }
   }
+  .sm\:h-\[600px\] {
+    @media (width >= 33.75rem) {
+      height: 600px;
+    }
+  }
   .sm\:flex-row {
     @media (width >= 33.75rem) {
       flex-direction: row;
@@ -709,6 +723,11 @@
       padding: calc(var(--spacing) * 10);
     }
   }
+  .sm\:text-left {
+    @media (width >= 33.75rem) {
+      text-align: left;
+    }
+  }
   .sm\:text-6xl {
     @media (width >= 33.75rem) {
       font-size: var(--text-6xl);
@@ -719,6 +738,12 @@
     @media (width >= 33.75rem) {
       font-size: var(--text-8xl);
       line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 33.75rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .md\:flex {
